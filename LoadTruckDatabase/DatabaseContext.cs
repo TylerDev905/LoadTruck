@@ -26,7 +26,7 @@ namespace LoadTruckDatabase
             // sets the validation of the entity model
             modelBuilder.Entity<Truck>()
                 .Property(p => p.Name)
-                .HasMaxLength(20)
+                .HasMaxLength(10)
                 .IsRequired();
         }
         
