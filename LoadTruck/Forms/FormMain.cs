@@ -144,13 +144,13 @@ namespace LoadTruck
 
         private void cbTrucks_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (cbTrucks.SelectedItem != null)
-            //{
-            //    string key = ((KeyValuePair<string, string>)cbTrucks.SelectedItem).Key;
-            //    var id = Guid.Parse(key);
+            if (cbTrucks.SelectedItem != null)
+            {
+                string key = ((KeyValuePair<string, string>)cbTrucks.SelectedItem).Key;
+                var id = Guid.Parse(key);
 
-            //    PopulateTruckInventory(id);
-            //}
+                PopulateTruckInventory(id);
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
